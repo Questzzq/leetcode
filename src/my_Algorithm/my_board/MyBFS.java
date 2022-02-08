@@ -3,11 +3,9 @@ package my_Algorithm.my_board;
 public class MyBFS {
     public static void main(String[] args) {
         char[][] board = {
-                {'A', 'B', 'C', 'E'},
-                {'S', 'F', 'C', 'S'},
-                {'A', 'D', 'E', 'E'}
+                {'A'}
         };
-        String target = "FCE";
+        String target = "A";
         System.out.println(exist(board, target));
     }
 

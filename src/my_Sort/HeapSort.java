@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class HeapSort {
     public static void main(String[] args) {
-        int[] arr = {4, 6, 8, 4234523, 56, 566565, 5, 9, 9, 7, 7, 6, 6, 6, 5, 4, 4, 3, 2, 12, 1, 2, 2, 2132};
+        int[] arr = {4, 6, 8, 5, 9, 3, 3, 3, 1, 2};
         HeapSort heap = new HeapSort();
         heap.heapSort(arr);
         System.out.println(Arrays.toString(arr));
@@ -33,10 +33,10 @@ public class HeapSort {
     private void heapAdjust(int[] arr, int i, int length) {
         int temp = arr[i];
         for(int k = 2*i+1; k < length; k = 2*k+1) {
-            if(k+1 < length && arr[k] < arr[k+1]) {
+            if(k+1 < length && arr[k] > arr[k+1]) {
                 k++;
             }
-            if(arr[k] > temp) {
+            if(arr[k] < temp) {
                 arr[i] = arr[k];
                 i = k;
             } else {
