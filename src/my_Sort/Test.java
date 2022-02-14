@@ -1,8 +1,10 @@
 package my_Sort;
 
 import java.util.Arrays;
-import java.util.Comparator;
 
+/**
+ * 剑指 Offer 45. 把数组排成最小的数
+ */
 public class Test {
     public static void main(String[] args) {
         int[] a = {1,2,3,4,5,6,7,8,9,0};
